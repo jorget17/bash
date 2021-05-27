@@ -1,0 +1,26 @@
+#! /bin/bash
+
+# Para crear un nuevo usuario:
+
+# sudo useradd [OPTIONS] username
+
+# -m (o --create-home) crea además la carpeta home para ese usuario en /home/username
+
+# sudo useradd -m username
+
+# Los parámetros por defecto con los que crea el usuario están en el fichero /etc/default/useradd
+
+# Para generar el password
+
+# sudo passwd username
+
+# Añadir el usuario username al grupo sudoers
+
+# sudo usermod -aG sudo username
+
+# Eliminar un usuario
+
+# sudo userdel -r username
+
+# -r elimina también el home del usuario
+

@@ -20,7 +20,5 @@
 
 # Eliminar un usuario
 
-# sudo userdel -r username
-
-# -r elimina también el home del usuario
+# sudo userdel --remove-home username
 

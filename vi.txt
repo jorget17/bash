@@ -1,0 +1,17 @@
+# Al iniciar vi este se encuentra en COMMAND MODE.
+# Este modo permite introducir comandos. Los principales son:
+
+i --> Pone vi en mode EDIT, que permite introducir el texto.
+ESC --> Vuelve a poner vi en COMMAND MODE.
+:q --> Sale de vi.
+:q! --> Sale de vi sin preguntar por guardar los cambios.
+:w --> WRITE. Guarda los cambios en el fichero.
+:wq --> Guarda los cambios y sale en un solo comando
+set number --> Muestra los números de línea.
+
+Para desplazarse por el texto, en modo COMMAND MODE:
+
+h --> izquierda
+j --> abajo
+k --> arriba
+l --> derecha

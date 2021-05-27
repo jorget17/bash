@@ -1,0 +1,70 @@
+# +================+
+# | What is Linux? |
+# +================+
+
+# Linux is a generic term that refers to different open source
+# operating systems based on the Linux kernel.
+
+# The Linux kernel was originally created by Linus Torvalds in 1991.
+
+# A kernel is a piece of software that is designed to act as an
+# intermediate layer between low-level hardware (processor, memory
+# or input/output devices) and high level software (operating system).
+
+# Apart from Linux kernel Linux operating systems rely on GNU
+# project utilities (BASH, for example).
+
+# Because of this, Linux is referred to by some as GNU/Linux.
+
+# The GNU project is a collection of free software, a lot of
+# which is found in most Linux distributions.
+
+# The Linux kernel is so-called UNIX-like software. This implies
+# that is similar to the original Unix kernel, created between 1971
+# and 1973 at Bell Labs by Ken Thompson and Dennis Ritchie.
+# But the Linux kernel is only based on Unix principles and does not
+# share code with Unix systems. Famous UNIX systems include the BSDs
+# (FreeBSD, OpenBSD) and macOS.
+
+# Linux operating systems can be used as desktop or as server. Most
+# Linux usage is accounted for the server landscape. (around 70% of
+# all servers on the internet).
+# The Linux operating systems fall within distribution families.
+# Some of them are Ubuntu (based in Debian), Fedora (based in Red Hat),
+# SUSE and Arch.
+# Android (with a market share of around 85%) uses a modified version
+# of the Linux kernel. The same goes for many SmartTVs, routers,
+# modems and other devices.
+
+# +===============+
+# | What is BASH? |
+# +===============+
+
+# BASH is the most used shell in Linx systems. It is based in sh or
+# Bourne Shell. BASH stands for Bourne Again SHell.
+
+# A shell is a user interface. Most often it is used to refer to a
+# text-based interface, also called a command-line interface (CLI).
+# However, it is called a shell because it can be seen as a shell
+# around the kernel; this means that it apllies to CLIs, as well
+# to graphical user interfaces (GUIs).
+
+# The purpose of a shell, both CLI and GUI, is to allow the user
+# interact with the system: typing in the keyboard will make leters
+# appear on the screen, moving the mouse will change the location
+# of the cursor on the screen, giving the command to delete a file
+# will remove the bytes from the disk...
+
+# In the earliest days of Unix and computers, no GUIs were avaliable
+# so all work was performed via CLI. To connect to the shell on a
+# running machine a video terminal was used: often this was a very
+# simple monitor combined with a keyboard, which was connected with
+# a RS-232 serial cable. Commands entered on this video terminal
+# were processed by the shell running on the Unix machine. Nowadays
+# a piece of software running in a GUI, a terminal emulator, is used
+# for interaction with the shell.
+
+# Besides using the Bash shell for direct system interaction, it
+# provides another important functionality: the ability to execute
+# multiple commands sequentially, with or without user interaction,
+# tailored to a specific goal: Bash scripts.

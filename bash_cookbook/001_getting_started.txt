@@ -1,0 +1,17 @@
+#! /bin/bash
+
+# En el prompt el símbolo $ representa un usuario regular y el símbolo # representa al usuario root.
+
+# ~ representa al atajo para el directorio home del usuario concreto. Se puede ir directamente a este
+# directorio mediante cd ~ o simplemente cd
+
+# Cuando se ejecuta un terminal se carga un perfil con parámetros y comandos específicos para cada usuario.
+# Estos parámetros se encuentran generalmente en el fichero ~/.bashrc o ~/.bash_profile
+
+# El Bash shell contiene un historial con todos los comandos ejecutados por el usuario (localizado en ~/.bash_history).
+# Se puede acceder a este historial mediante el comando history. Puede ejecutarse de nuevo un comando del historial
+# mediante ! seguido del número del comando correspondiente (sin espacio).
+
+# Puede usarse Ctrl + r para buscar en el historial mediante palabras clave. Pulsando Ctrl + r de nuevo se muestran
+# diferentes resultados coincidentes con la búsqueda. Una vez localizado el comando que quiere volver a ejecutarse
+# esto se consigue con ENTER.

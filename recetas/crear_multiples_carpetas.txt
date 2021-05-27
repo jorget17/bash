@@ -1,0 +1,16 @@
+#! /bin/bash
+
+# Crear una carpeta 2022 y varias carpetas en su interior (eventos, facturas, clientes)
+
+# mkdir -p prueba/2022/{eventos,facturas,clientes}
+
+# -p indica al comando mkdir que cree el directorio raiz si este no existe.
+
+# Crear las carpetas 2022, 2023... hasta 2025, con las subcarpetas facturas y clientes en cada una de ellas.
+# Dentro de las carpetas facturas crear dos subcarpetas: abonadas y pendientes.
+
+# mkdir -p prueba/{2022..2025}/{facturas/{abonadas,pendientes},clientes}
+
+# Es importante no dejar espacios en blanco en el comando.
+
+# rm -r prueba # elimina todo el directorio prueba aunque este no esté vacío.

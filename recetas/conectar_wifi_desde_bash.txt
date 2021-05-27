@@ -1,0 +1,10 @@
+Just edit /etc/network/interfaces and write:
+
+auto wlan0
+iface wlan0 inet dhcp 
+                wpa-ssid {ssid}
+                wpa-psk  {password}
+After that write and close file and use command:
+
+sudo dhclient wlan0
+Replace {ssid} and {password} with your respective WiFi SSID and password.

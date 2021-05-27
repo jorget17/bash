@@ -1,0 +1,38 @@
+#! /bin/bash
+
+# El comando shutdown apaga el sistema de manera segura. La sintaxis es la siguiente:
+
+# shutdown [OPTIONS] [TIME] [MESSAGE]
+
+# En las distribuciones Linux modernas shutdown es un alias a systemctl y está disponible
+# por motivos de compatibilidad.
+
+# Solo los usuarios root o con privilegios sudo pueden usar este comando.
+
+# sudo shutdown
+
+# Apaga la máquina después de un minuto, que es el intervalo por defecto.
+
+# sudo shutdown 11:00
+
+# Apaga la máquina a las 11:00 AM.
+
+# sudo shutdown +10
+
+# Apaga la máquina en 10 minutos.
+
+# sudo shutdown now
+
+# Apaga la máquina inmediatamente.
+
+# sudo shutdown +30 "Mantenimiento SO"
+
+# Apaga la máquina en 30 minutos y especifica el mensaje Mantenimiento SO a los usuarios que estén utilizándola.
+
+# sudo shutdown -r
+
+# Reinicia el sistema.
+
+# sudo shutdown -c "Mensaje"
+
+# Cancela un shutdown programado anteriormente y especifica el mensaje (opcional)

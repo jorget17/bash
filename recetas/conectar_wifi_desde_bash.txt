@@ -8,3 +8,4 @@ After that write and close file and use command:
 
 sudo dhclient wlan0
 Replace {ssid} and {password} with your respective WiFi SSID and password.
+

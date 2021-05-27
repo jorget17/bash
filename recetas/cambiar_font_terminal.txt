@@ -1,0 +1,10 @@
+#! /bin/bash
+
+# Mediante el siguiente comando se puede reconfigurar el terminal cuando no se usa el GUI:
+
+# sudo dpkg-reconfigure console-setup
+
+# Elegir sistema UTF-8
+# Guess optional character set
+# Let the system select a suitable font
+# 10x20 (8x16 por defecto)

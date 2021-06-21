@@ -1,0 +1,123 @@
++----------------------------------------------+
+| 1. Introducción a la LINEA DE COMANDOS (CLI) |
++----------------------------------------------+
+
+  ======================
+* Objetivos del capítulo *
+  ======================
+
+Al final del capítulo:
+
+- Conoceremos las bases de un filesystem
+- Navegar por el filesystem desde el CLI
+- Realizar tareas de gestión de ficheros desde el CLI
+- Utilizar el historial del shell para componer comandos eficientemente
+- Utilizar atajos de edición en el shell para componer comandos eficientemente
+- Escribir y usar comodines para manejar grupos de ficheros y directorios
+
+  ============
+* Introducción *
+  ============
+
+El uso masivo de los ordenadores en nuestro día a día ha propiciado que los GUIs (interfaz gráfico de usuario)
+sean omnipresentes, debido a que son relativamente fáciles de aprender por cualquier usuario. Pero no debemos
+ignorar una de las herramientas más poderosas de una era aparentemente pasada: el CLI (interfaz de línea de
+comandos).
+
+GUIs y CLIs afrontan la interacción con el usuario desde diferentes enfoques:
+
+Los GUIs destacan por:
+
+	- facilidad de uso,
+	- feedback inmediato,
+	- aspecto visual.
+
+Los CLIs destacan por:
+
+	- automatización y repetición de tareas,
+	- composición de complicados flujos de tareas que pueden ejecutarse con una sola interacción.
+
+Esto último hace que la línea de comandos tenga aún hoy en día una gran utilidad y uso. Por ejemplo, es
+muy útil para un administrador web conectarse a un servidor vía un shell de línea de comandos; puede 
+controlar el ordenador aunque se encuentre a miles de kilómetros como si estuviera sentado delante de él.
+
+Incluso fuera del mundo de los profesionales de la informática, la automatización de tareas es algo que
+puede resultar muy útil para cualquier usuario: un oficinista que necesita renombrar 20 hojas de cálculo
+a mayúsculas puede realizar la tarea en segundos desde el shell, mientras que la misma tarea desde el GUI
+implicaría un trabajo manual, tedioso y susceptible a errores.
+
+Además de esto, los GUIs tienden a cambiar con cada versión: los menús cambian, los comandos cambian de
+sitio, las barras de herramientas presentan nuevos iconos y son reorganizadas o reagrupadas y nuevas
+prestaciones son añadidas y, en ocasiones, algunas eliminadas. Sin embargo, la inmensa mayoría de lo
+que aprendamos hoy en día respecto a la línea de comandos es 100% compatible con el CLI de hace 30 años
+y permanecerá así en el futuro. Es muy raro que alguna característica añadida invalide lo que era válido
+antes.
+
+  --------------------------------------------------
+* Línea de Comandos: Historia, Shells y Terminología *
+  --------------------------------------------------
+
+Historia del Command Line
+-------------------------
+
+En los inicios de la computación, los ordenadores eran enormes calculadoras electro-mecánicas, con poca
+o nula interactividad. Se cargaban en el sistema enormes cantidades de datos en forma de tarjetas perforadas
+y, después de una ejecución larguísima, las máquinas devolvían los resultados en otras tarjetas perforadas.
+
+Esto se conoce como ejecución batch, término que se sigue utilizando hoy en día. La esencia de este proceso
+batch es preparar a mano todos los datos y el código que los debe procesar e introducirlos juntos en la máquina.
+Se insta a la computadora a ejecutar el proceso, y cuando termina devuelve el resultado y queda a la espera
+del siguiente proceso.
+
+A medida que la computación avanzó llegó la era de los teletipos (teletypewritter o TTY). Las computadoras
+aceptaban input del usuario y producía el output interactivamente a través de un dispositivo similar a una
+maquina de escribir. Era la primera vez que la gente se sentaba delante de un terminal e interactuaba
+continuamente con el sistema, accediendo a los resultados de la computación en vivo.
+
+En un momento dado, los TTYs con papel y teclados mecánicos fueron sustituidos por TTYs con pantallas de texto
+y teclados electrónicos. Esta forma de interactuar con un ordenador a través de un teclado electrónico y una
+pantalla es el llamado command-line interface o CLI. Funciona de la siguiente manera:
+
+1. El sistema espera que el usuario introduzca una sentencia (una línea de comandos).
+2. El sistema ejecuta el comando, si es válido, y muestra el resultado en pantalla.
+3. La secuencia se repite indefinidamente, y el usuario lleva a cabo su tarea paso a paso.
+
+De manera más genérica el CLI se denomina también REPL (Read, Evaluate, Print, Loop):
+
+1. Read: el ordenador lee el input del usuario.
+2. Evaluate: el ordenador evalua el comando.
+3. Print: muestra el resultado.
+4. Loop: se vuelve al paso inicial.
+
+Shells de líneas de comando
+---------------------------
+
+Los CLIs que interactúan en el sistema operativo se denominan SHELLs. Estos fueron evolucionando desde
+ser capaces de efectuar un único comando cada vez a ejecutar múltiples comandos en secuencia, repetir
+comandos múltiples veces, reinvocar comandos del pasado, etc. La mayoría de esta evolución se produjo en
+el mundo UNIX, y el CLI de UNIX sigue siendo, a día de hoy, el estandard.
+
+Existen diferentes CLIs en el propio UNIX, que podrían denominarse como diferentes dialectos de un mismo
+lenguaje. Estos CLIs se denominan SHELLs, porque forman una especie de caparazón entre los entresijos del
+sistema operativo y el usuario.
+
+Entre los SHELLs más utilizados se encuentran Bourne Shell, Korn y C Shell. También existen SHELLs en otros
+sistemas operativos (PowerShell y DOS en Windows, por ejemplo. Este curso utilizará una reencarnación
+moderna de Bourne Shell llamada BASH (Bourne Again SHell), que es la más utilizada y la considerada más
+estándar.
+
+Terminología del Command-Line
+-----------------------------
+
+Es importante conocer los siguientes términos:
+
+- COMANDOS: Las "palabras" que son tecleadas para ejecutar cierta función. Pueden ser construidas en el
+	    propio SHELL o programas externos. Cualquier programa que se encuentre disponible en el
+            sistema es un comando.
+
+- ARGUMENTOS: Las cadenas de caracteres tecleadas después de un comando. Especifican al comando cómo operar
+              o sobre qué operar. Suelen ser nombres de los datos, los ficheros, etc.
+
+- SWITCHES / OPCIONES / FLAGS: Se tratan de argumentos que empiezan con un guión o un doble guión y que
+              requieren al comando a tener cierto comportamiento. Las opciones suelen tener una versión
+              corta (un solo guión seguido de una sola letra) y una versión larga  
